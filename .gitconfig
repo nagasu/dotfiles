@@ -6,7 +6,7 @@
 [core]
 	quotepath = false
 	fscache = true
-	autocrlf = true
+	autocrlf = input
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
