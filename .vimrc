@@ -117,8 +117,8 @@ set visualbell t_vb= "?????????????
 set noerrorbells "??????????????????????
 
 "============================= ????? =============================
-nnoremap ; :
-nnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
 noremap j gj
 noremap k gk
 noremap <S-h>   ^
@@ -127,6 +127,7 @@ noremap <S-k>   {
 noremap <S-l>   $
 noremap m  %
 nnoremap <CR> A<CR><ESC>
+nnoremap <F3> :noh<CR>
 
 "=============================== other ===========================
 "カーソル形状
