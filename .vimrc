@@ -48,14 +48,14 @@ let g:indentLine_char = '' "use Â¦, â”† or â”‚
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 "============================= encoding ===============================
-if has('win32')
-    if has('gui_running')
-        let &termencoding = &encoding
-        set encoding=utf-8
-    else
-        set encoding=cp932
-    endif
-endif
+"if has('win32')
+"    if has('gui_running')
+"        let &termencoding = &encoding
+"        set encoding=utf-8
+"    else
+"        set encoding=cp932
+"    endif
+"endif
 
 "============================= ??????? ===============================
 set number
