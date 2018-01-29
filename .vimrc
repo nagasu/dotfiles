@@ -71,7 +71,7 @@ nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 "============================= ??????? ===============================
 set number
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 set laststatus=2
 set cmdheight=2
 set showmatch
