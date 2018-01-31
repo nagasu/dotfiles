@@ -25,6 +25,7 @@ nnoremap <leader>e :VimFilerExplore -split -winwidth=30 -find -no-quit<Cr>
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundle 'Yggdroot/indentLine'
 
@@ -141,3 +142,5 @@ nnoremap <F3> :noh<CR>
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
+syntax enable
+colorscheme Monokai
