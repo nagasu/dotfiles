@@ -25,4 +25,6 @@
 	last = log -1 HEAD
 [http]
 [ghq]
-	root = ~/src
+	root = ~/ghq
+[push]
+	default = matching
