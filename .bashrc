@@ -13,6 +13,7 @@ alias g='git'
 
 alias dc="docker"
 alias dcc="docker-compose"
+alias dm="docker-machine"
 
 # Get latest container ID
 alias dl="docker ps -l -q"
