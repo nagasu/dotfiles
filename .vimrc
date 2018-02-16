@@ -140,6 +140,11 @@ noremap <S-l>   $
 noremap m  %
 nnoremap <CR> A<CR><ESC>
 nnoremap <F3> :noh<CR>
+noremap PP "0p
+
+" 複数行を選択して連続してインデントできるようにする
+vnoremap > >gv
+vnoremap < <gv
 
 "=============================== other ===========================
 "カーソル形状
