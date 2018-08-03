@@ -3,17 +3,12 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 
-" Required:
 call neobundle#begin(expand('~/.vim/bundle'))
 
-" Let NeoBundle manage NeoBundle
-" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Add or remove your Bundles here:
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
@@ -24,15 +19,10 @@ nnoremap <leader>e :VimFilerExplore -split -winwidth=30 -find -no-quit<Cr>
 
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'ujihisa/unite-colorscheme'
-
-NeoBundle 'Yggdroot/indentLine'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
-" Required:
 call neobundle#end()
 
 " Required:
@@ -54,14 +44,7 @@ nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
 "============================= color ===============================
 syntax enable
-colorscheme Monokai
-
-"============================= indentLine ===============================
-let g:indentLine_faster = 1
-let g:indentLine_color_term = 111
-let g:indentLine_color_gui = '#708090'
-let g:indentLine_char = '' "use Â¦, â”† or â”‚
-nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
+"colorscheme molokai
 
 "============================= encoding ===============================
 "if has('win32')
@@ -145,14 +128,3 @@ noremap PP "0p
 " 複数行を選択して連続してインデントできるようにする
 vnoremap > >gv
 vnoremap < <gv
-
-"=============================== other ===========================
-"カーソル形状
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-
-"if has("autocmd")
-"    au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-"     au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-"     au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-"endif
